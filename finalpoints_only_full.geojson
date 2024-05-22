@@ -1,0 +1,127 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Footscray Community Arts Centre"
+            },
+            "geometry": {
+                "coordinates": [
+                    144.907296,
+                    -37.803086
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Footscray Townhall",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle"
+            },
+            "geometry": {
+                "coordinates": [
+                    144.9007900556672,
+                    -37.80458169998814
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Heavenly Queen Temple"
+            },
+            "geometry": {
+                "coordinates": [
+                    144.91420397752387,
+                    -37.798946084948234
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Whitten Oval"
+            },
+            "geometry": {
+                "coordinates": [
+                    144.88676230505638,
+                    -37.79988542150189
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Little Saigon"
+            },
+            "geometry": {
+                "coordinates": [
+                    144.89992396195782,
+                    -37.79894298858636
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Footscray Drill Hall"
+            },
+            "geometry": {
+                "coordinates": [
+                    144.8879068255057,
+                    -37.79886175901476
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Footscray Park"
+            },
+            "geometry": {
+                "coordinates": [
+                    144.90944361978342,
+                    -37.794679971012215
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Footscray Market"
+            },
+            "geometry": {
+                "coordinates": [
+                    144.90190892100532,
+                    -37.800534733495304
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Footscray Railway Station",
+                "icon": "bar"
+            },
+            "geometry": {
+                "coordinates": [
+                    144.901841,
+                    -37.801742
+                ],
+                "type": "Point"
+            }
+            
+        }
+    ]
+}

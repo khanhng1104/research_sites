@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Swipe between maps</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<style>
+    body {
+        overflow: hidden;
+    }
+
+    body * {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    h2 {
+        font-size: 22px;
+        margin: 0;
+        font-weight: bolder;
+        line-height: 23px;
+        padding: 15px 2px;
+        text-align: center;
+        }
+</style>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.css" type="text/css">
+<div id="comparison-container">
+    <div id="before" class="map"></div>
+    <div id="after" class="map"></div>
+</div>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1Ijoia2hhbmhuZzExMDQiLCJhIjoiY2xrdWRuZm55MGVyNjNlcGRjOTg1eHdsNSJ9.77Ca_pdxm05cUM4TTKzQlg';
+    const beforeMap = new mapboxgl.Map({
+        container: 'before',
+        // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+        style: 'mapbox://styles/khanhng1104/clwgkkt9n00ds01ppg1ma8zj2',
+        center: [144.90299, -37.79994],
+            zoom: 13.78
+    });
+
+    const afterMap = new mapboxgl.Map({
+        container: 'after',
+        style: 'mapbox://styles/khanhng1104/clwgdevxy00df01ppfy638qzb',
+        center: [144.90299, -37.79994],
+            zoom: 13.78
+    });
+
+    // A selector or reference to HTML element
+    const container = '#comparison-container';
+
+    const map = new mapboxgl.Compare(beforeMap, afterMap, container, {
+        // Set this to enable comparing two maps by mouse movement:
+        // mousemove: true
+    });
+
+   beforeMap.on('load', () => {
+            beforeMap.addSource('sites', {
+                type: 'geojson',
+                data: 'finalpoints_maki.geojson',
+            });
+
+            // Add a layer showing the places.
+            beforeMap.addLayer({
+                'id': 'symbols',
+                'type': 'symbol',
+                'source': 'sites',
+                'layout': {
+                    'icon-image': ['get', 'icon'],
+                    'icon-allow-overlap': true,
+                    'icon-size': 2,
+                }
+            });
+            beforeMap.on('click', 'symbols', (e) => {
+                // Copy coordinates array.
+                const coordinates = e.features[0].geometry.coordinates.slice();
+                const title = e.features[0].properties.title;
+                const description2 = e.features[0].properties.description2;
+                const image = e.features[0].properties.image;
+
+                // Ensure that if the map is zoomed out such that multiple
+                // copies of the feature are visible, the popup appears
+                // over the copy being pointed to.
+                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+
+                new mapboxgl.Popup()
+                    .setLngLat(coordinates)
+                    .setHTML(`<h2>${title}</h2><p style="text-align: center;">${description2}${image}</p>`)
+                    .addTo(beforeMap);
+            });
+              // Change the cursor to a pointer when the mouse is over the places layer.
+              beforeMap.on('mouseenter', 'symbols', () => {
+                beforeMap.getCanvas().style.cursor = 'pointer';
+            });
+
+            // Change it back to a pointer when it leaves.
+            beforeMap.on('mouseleave', 'symbols', () => {
+                beforeMap.getCanvas().style.cursor = '';
+            });
+   }),
+    //aftermap right
+    afterMap.on('load', () => {
+        afterMap.addSource('sites', {
+                type: 'geojson',
+                data: 'finalpoints_maki.geojson',
+            });
+
+            // Add a layer showing the places.
+            afterMap.addLayer({
+                'id': 'symbols',
+                'type': 'symbol',
+                'source': 'sites',
+                'layout': {
+                    'icon-image': ['get', 'icon'],
+                    'icon-allow-overlap': true,
+                    'icon-size': 2,
+                }
+            });
+            afterMap.on('click', 'symbols', (e) => {
+                // Copy coordinates array.
+                const coordinates = e.features[0].geometry.coordinates.slice();
+                const title = e.features[0].properties.title;
+                const description = e.features[0].properties.description;
+                const image = e.features[0].properties.image;
+                const image2 = e.features[0].properties.image2;
+
+                // Ensure that if the map is zoomed out such that multiple
+                // copies of the feature are visible, the popup appears
+                // over the copy being pointed to.
+                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+
+                new mapboxgl.Popup()
+                    .setLngLat(coordinates)
+                    .setHTML(`<h2>${title}</h2><p style="text-align: center;">${description}${image2}</p>`)
+                    .addTo(afterMap);
+            });
+              // Change the cursor to a pointer when the mouse is over the places layer.
+              afterMap.on('mouseenter', 'symbols', () => {
+                afterMap.getCanvas().style.cursor = 'pointer';
+            });
+
+            // Change it back to a pointer when it leaves.
+            afterMap.on('mouseleave', 'symbols', () => {
+                afterMap.getCanvas().style.cursor = '';
+            });
+        })
+</script>
+
+</body>
+</html>

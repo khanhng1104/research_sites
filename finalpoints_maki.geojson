@@ -1,0 +1,152 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Footscray Community Arts Centre",
+                "description": "Opened in 1974, the Arts Centre originally served as a hub for local artists and community events, featuring workshops and exhibitions.",
+                "description2": "Today, it offers a wide range of contemporary art exhibitions, live performances, and creative workshops for the community.",
+                "icon": "art-gallery",
+                "address": "45 Moreland St, Footscray VIC 3011, Australia",
+                "background": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Eo_circle_green_white_number-3.svg/1280px-Eo_circle_green_white_number-3.svg.png",
+                "iconSize": [50, 50],
+                "image2": "<img id='arts-centre-before' style='height:100%; width:100%' src='https://footscrayarts.com/cms/wp-content/uploads/2024/05/Henderson-House-archival-image.jpeg'></img>",
+                "image": "<img id='arts-centre-after' style='height:100%; width:100%' src='https://cdn.eventfinda.com.au/uploads/locations/transformed/181136-15531-14.jpg'></img>"
+            },
+            "geometry": {
+                "coordinates": [144.907296, -37.803086],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Footscray Townhall",
+                "description": "Built in 1936, Footscray Townhall was the center of municipal activities, hosting council meetings and local events.",
+                "description2": "Today, the Townhall continues to serve the community with its heritage architecture preserved and local history exhibits.",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "circle",
+                "icon": "town-hall",
+                "address": "61 Napier St, Footscray VIC 3011, Australia",
+                "background": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Eo_circle_green_white_number-2.svg/1280px-Eo_circle_green_white_number-2.svg.png",
+                "iconSize": [50, 50],
+                "image2": "<img id='townhall-before' style='height:100%; width:100%' src='https://www.picturevictoria.vic.gov.au/site/maribyrnong/images/688.jpg'></img>",
+                "image": "<img id='townhall-after' style='height:100%; width:100%' src='https://maribyrnonghobsonsbay.starweekly.com.au/wp-content/uploads/sites/3/2021/02/townhall_229049_01.jpg'></img>"
+            },
+            "geometry": {
+                "coordinates": [144.9007900556672, -37.80458169998814],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Heavenly Queen Temple",
+                "description": "Established in 2016, the Heavenly Queen Temple was built to celebrate and preserve Chinese cultural heritage in the community.",
+                "description2": "Today, the temple is a vibrant place of worship and cultural events, attracting visitors for its stunning architecture and serene atmosphere.",
+                "icon": "religious-buddhist",
+                "address": "20 Joseph Rd, Footscray VIC 3011, Australia",
+                "background": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Eo_circle_green_white_number-4.svg/1280px-Eo_circle_green_white_number-4.svg.png",
+                "iconSize": [50, 50],
+                "image2": "<img id='temple-before' style='height:100%; width:100%' src='https://t3.ftcdn.net/jpg/02/44/17/82/360_F_244178265_NP4S8WdlZRGYVSkVkxhtiDonSfQPAbyO.jpg'></img>",
+                "image": "<img id='temple-after' style='height:100%; width:100%' src='https://heavenlyqueentemple.com.au/assets/dji_0166-hdr.jpg'></img>"
+            },
+            "geometry": {
+                "coordinates": [144.91420397752387, -37.798946084948234],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Whitten Oval",
+                "description": "Opened in 1941, Whitten Oval has been the home ground for the Western Bulldogs, hosting numerous football matches and community events.",
+                "description2": "The Oval now boasts modern facilities, serving as a premier sports venue and community hub with regular events and activities.",
+                "icon": "pitch",
+                "address": "417 Barkly St, Footscray VIC 3011, Australia",
+                "background": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Eo_circle_red_white_number-8.svg/1280px-Eo_circle_red_white_number-8.svg.png",
+                "iconSize": [50, 50],
+                "image2": "<img id='oval-before' style='height:100%; width:100%' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3IOPSybNAmwJeiY_HoH1VseeYF8CG5TtaRUCE8F49CQ&s'></img>",
+                "image": "<img id='oval-after' style='height:100%; width:100%' src='https://resources.westernbulldogs.com.au/photo-resources/2019/11/30/a297abdc-df0b-4309-b1e9-bd8efed61ae5/TnaTaSet.jpg?width=1064&height=600'></img>"
+            },
+            "geometry": {
+                "coordinates": [144.88676230505638, -37.79988542150189],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Little Saigon",
+                "description": "In the 1990s, Little Saigon was known for its bustling market, offering fresh produce and authentic Vietnamese cuisine.",
+                "description2": "Today, it remains a vibrant cultural hub with new developments, retaining its reputation for excellent food and lively atmosphere.",
+                "icon": "theatre",
+                "address": "35 Byron St, Footscray VIC 3011, Australia",
+                "background": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Eo_circle_green_white_number-6.svg/1280px-Eo_circle_green_white_number-6.svg.png",
+                "iconSize": [50, 50],
+                "image2": "<img id='little-saigon' style='height:100%; width:100%' src='https://i.redd.it/e8evmka0ubv91.jpg'></img>",
+                "image": "<img id='little-saigon' style='height:100%; width:100%' src='https://www.mcbridecharlesryan.com.au/wp-content/uploads/2018/02/885-small_WelcomeArch_MCR_JeremyWeihrauch_00-1024x671.jpg'></img>"
+            },
+            "geometry": {
+                "coordinates": [144.89992396195782, -37.79894298858636],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Footscray Railway Station",
+                "description": "Established in 1859, Footscray Railway Station was a critical hub during the gold rush, featuring Victorian architecture and bustling with passengers and goods.",
+                "description2": "Today, the station blends historic charm with modern facilities, continuing to serve as a major transport hub with enhanced accessibility.",
+                "icon": "rail",
+                "address": "Irving St, Footscray VIC 3011, Australia",
+                "background": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Eo_circle_green_white_number-1.svg/1280px-Eo_circle_green_white_number-1.svg.png",
+                "iconSize": [50, 50],
+                "image2": "<img id='railway-station-before' style='height:100%; width:100%' src='https://www.flickr.com/photos/glenhsparky/51608020908/in/photolist-2mFB5s4-QfD1kY-2mFAZxi-2mFzKHh-MNZMXG-P4WgUJ-NsY23H-RkexQK'></img>",
+                "image": "<img id='railway-station-after' style='height:100%; width:100%' src='https://upload.wikimedia.org/wikipedia/commons/0/0a/Footscray_station_Maribyrnong_River_July_2015.jpg'></img>"
+            },
+            "geometry": {
+                "coordinates": [144.900722, -37.800805],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "title": "Footscray Park",
+                "description": "Opened in 1911, Footscray Park has long been a popular location for leisurely walks, picnics, and community gatherings by the Maribyrnong River.",
+                "description2": "Today, the park features modern amenities while preserving its historic charm, hosting regular community events and offering beautiful riverside views.",
+                "icon": "park",
+                "address": "40 Maribyrnong Blvd, Footscray VIC 3011, Australia",
+                "background": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Eo_circle_green_white_number-5.svg/1280px-Eo_circle_green_white_number-5.svg.png",
+                "iconSize": [50, 50],
+                "image2": "<img id='park-before' style='height:100%; width:100%' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOcTA8lLjOTEofmPHynOrjQtWrsPS6PZRn80TNc88GtP68DWyGYfHh3-00EPO3gbknmwg&usqp=CAU'></img>",
+                "image": "<img id='park-after' style='height:100%; width:100%' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjrmpENTwXgUY0Kt8vftD9zOgJIucCL4CykhKnwn9SZ5hKYQx8q_z_WmotUY_xoDvMAqc&usqp=CAU'></img>"
+            },
+            "geometry": {
+                "coordinates": [144.90944361978342, -37.794679971012215],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+        "properties": {
+            "title": "Footscray Drill Hall",
+            "description": "Built in 1926, Footscray Drill Hall was used for military training and community events during its early years.",
+            "description2": "Now, it serves as a museum and community space, preserving its historical significance while hosting various public events.",
+            "icon": "museum",
+            "address": "1 Paisley St, Footscray VIC 3011, Australia",
+            "background": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Eo_circle_blue_white_number-7.svg/1280px-Eo_circle_blue_white_number-7.svg.png",
+            "iconSize": [50, 50],
+            "image2": "<img id='drill-hall-before' style='height:100%; width:100%' src='https://3.bp.blogspot.com/-AAS5ALdsCh4/UzAtHvKZfII/AAAAAAAAGZE/qfzZ2ze_q28/s1600/WO+drillhall.png'></img>",
+            "image": "<img id='drill-hall-after' style='height:100%; width:100%' src='https://scontent.fmel15-2.fna.fbcdn.net/v/t1.6435-9/124573932_10158669218852487_3843621955374088218_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JUWyUCmf7kcQ7kNvgGQBvoY&_nc_ht=scontent.fmel15-2.fna&oh=00_AYDbL2ohzCm3pKSRP_XF6YpWPZGZXy2YeMr130-55VKEFQ&oe=66743751'></img>"
+        },
+        "geometry": {
+            "coordinates": [144.8879068255057, -37.79886175901476],
+            "type": "Point"
+        }
+    }
+    ]
+}        
